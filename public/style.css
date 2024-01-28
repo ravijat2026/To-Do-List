@@ -1,0 +1,98 @@
+body {
+    background-color: #c2e4df;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(198, 1%, 29%);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 130%;
+  }
+  
+  .container {
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    max-width: 500px;
+    min-width: 250px;
+    background: #eef4dd;
+    background-image: radial-gradient(#c1c1bf 5.2%, transparent 0);
+    background-size: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 7px 2px #00000040;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .heading h1 {
+    padding: 0.2rem 1.2rem;
+    background-color: #fdcb6e;
+    font-size: 2rem;
+  }
+  
+  .form input {
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 0.7rem;
+    border-bottom-right-radius: 15px 3px;
+    border-bottom-left-radius: 3px 15px;
+    border: solid 3px transparent;
+    border-bottom: dashed 3px #e99c4a;
+    font-size: 1rem;
+    color: rgb(56, 54, 54);
+    width: 70%;
+    margin-bottom: 20px;
+    margin-right: 4px;
+  }
+  
+  button {
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-radius: 5px;
+  }
+  button span {
+    background: #eef4dd;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid hsl(198, 1%, 29%);
+    transition: top ease 0.5s;
+  }
+  button span:hover{
+    transform: translate(0, -2px);
+    background: #fdcb6e;
+    cursor: pointer;
+  }
+
+  .todolist{
+    position: relative;
+  }
+  
+  li {
+    text-align: left;
+    padding: 0.5rem;
+    word-wrap: break-word; 
+    list-style: decimal;
+  }
+  
+  .todolist .del{
+    margin-top: 4px;
+    float: right;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  @media (max-width:768px){
+    .container{
+      max-width: 380px;
+    }
+}
